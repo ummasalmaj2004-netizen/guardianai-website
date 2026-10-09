@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Safety Assistant - GuardianAI</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="GuardianAI home">
+    <span class="brand-badge" aria-hidden="true">G</span>
+    <span><strong>GuardianAI</strong><small>Digital Safety Companion for Youth</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="assistant.html" class="active">AI Safety Assistant</a>
+    <a href="risk-detection.html">Risk Detection</a>
+    <a href="learn.html">Learning Hub</a>
+    <a href="support.html">Report & Support</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main>
+
+  <div class="page-head">
+    <h1>AI Safety Assistant</h1>
+    <p>Describe an online problem in your own words. GuardianAI identifies possible risks, gives safety advice, and suggests reporting actions. You can stay anonymous - never share passwords or private photos here.</p>
+  </div>
+  <div class="two-col">
+    <section class="panel" aria-label="Chat with GuardianAI">
+      <h2>Chat with GuardianAI</h2>
+      <p><span class="chip teal">Private &amp; safe</span></p>
+      <div id="chat-thread">
+        <div class="bubble ai"><h4>GuardianAI</h4><p>You are safe here. Tell me what happened, or tap an example below.</p></div>
+      </div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <button class="btn navy" type="button" data-example="Someone is threatening me online.">Try: Someone is threatening me online.</button>
+        <button class="btn navy" type="button" data-example="A stranger is asking me to send photos and keep it secret.">Try: A stranger is asking for photos</button>
+        <button class="btn navy" type="button" data-example="People at school keep posting mean comments about me.">Try: Mean comments at school</button>
+      </div>
+      <form id="chat-form" style="display:flex;gap:.6rem;margin-top:1rem">
+        <input type="text" id="chat-input" placeholder="Type what happened... (you can stay anonymous)" aria-label="Describe your online problem">
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+    <aside class="panel" aria-label="Safety recommendations">
+      <h2>Safety recommendations</h2>
+      <div id="recommendations"><p>When you describe a problem, tailored recommendations appear here: risk identified, immediate action, evidence, reporting, and support.</p></div>
+      <p style="color:var(--muted)">Tone: calm, supportive, youth-friendly.</p>
+    </aside>
+  </div>
+
+</main>
+<footer class="footer">
+  <p><strong>GuardianAI</strong> - An Intelligent Digital Safety Companion for Youth Protection.</p>
+  <p>Built for the SafeTech Africa Hacklab Youth Social Innovation Challenge 2026.</p>
+  <p>GuardianAI gives general safety guidance, not legal or medical advice. If someone is in immediate danger, contact local emergency services first.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a><a href="assistant.html">Assistant</a><a href="risk-detection.html">Risk Check</a><a href="learn.html">Learn</a><a href="support.html">Support</a>
+</nav>
+<script src="assets/app.js"></script>
+</body>
+</html>

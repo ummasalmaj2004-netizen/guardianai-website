@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Risk Detection Tool - GuardianAI</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="GuardianAI home">
+    <span class="brand-badge" aria-hidden="true">G</span>
+    <span><strong>GuardianAI</strong><small>Digital Safety Companion for Youth</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="assistant.html">AI Safety Assistant</a>
+    <a href="risk-detection.html" class="active">Risk Detection</a>
+    <a href="learn.html">Learning Hub</a>
+    <a href="support.html">Report & Support</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main>
+
+  <div class="page-head">
+    <h1>AI Risk Detection Tool</h1>
+    <p>Paste a suspicious message and GuardianAI will classify the risk, rate its level, explain the warning signs, and recommend what to do next.</p>
+  </div>
+  <div class="two-col">
+    <section class="panel">
+      <form id="risk-form">
+        <label for="suspicious-message">Paste a suspicious message</label>
+        <textarea id="suspicious-message" rows="6" placeholder="Paste the message here..."></textarea>
+        <div style="display:flex;gap:.6rem;margin-top:.8rem;flex-wrap:wrap">
+          <button class="btn orange" type="submit">Analyse message</button>
+          <button class="btn navy" type="button" id="risk-example">Try the example</button>
+        </div>
+        <p style="color:var(--muted)">Example: &ldquo;Click this link and give your password to win a prize.&rdquo;</p>
+      </form>
+    </section>
+    <section class="panel" aria-live="polite">
+      <h2>AI analysis result</h2>
+      <div id="risk-result"><p>Your result will appear here: risk category, risk level indicator, and recommended actions.</p></div>
+    </section>
+  </div>
+
+</main>
+<footer class="footer">
+  <p><strong>GuardianAI</strong> - An Intelligent Digital Safety Companion for Youth Protection.</p>
+  <p>Built for the SafeTech Africa Hacklab Youth Social Innovation Challenge 2026.</p>
+  <p>GuardianAI gives general safety guidance, not legal or medical advice. If someone is in immediate danger, contact local emergency services first.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a><a href="assistant.html">Assistant</a><a href="risk-detection.html">Risk Check</a><a href="learn.html">Learn</a><a href="support.html">Support</a>
+</nav>
+<script src="assets/app.js"></script>
+</body>
+</html>

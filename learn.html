@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Safety Learning Hub - GuardianAI</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="GuardianAI home">
+    <span class="brand-badge" aria-hidden="true">G</span>
+    <span><strong>GuardianAI</strong><small>Digital Safety Companion for Youth</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="assistant.html">AI Safety Assistant</a>
+    <a href="risk-detection.html">Risk Detection</a>
+    <a href="learn.html" class="active">Learning Hub</a>
+    <a href="support.html">Report & Support</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<main>
+
+  <div class="page-head">
+    <h1>Digital Safety Learning Hub</h1>
+    <p>Short, youth-friendly lessons that build confidence and digital rights awareness. Open a topic to start learning.</p>
+  </div>
+
+  <details class="module"><summary>Online Privacy</summary><p>Passwords, privacy settings, sharing safely, location and photos.</p><ul><li>Use long, unique passwords and turn on two-factor authentication.</li><li>Check who can see your posts, location, and contact details.</li><li>Think before sharing photos - screenshots can travel far and fast.</li></ul><p style="color:var(--muted)">Formats to add: bite-size lessons - quizzes - videos - downloadable guides.</p></details>
+
+  <details class="module"><summary>Cyberbullying Awareness</summary><p>Recognise bullying, respond safely, support friends, and get help.</p><ul><li>Bullying is repeated, targeted harm - it is never your fault.</li><li>Do not retaliate. Save evidence, block, report, and tell a trusted adult.</li><li>Support friends: a kind message and standing beside them really helps.</li></ul><p style="color:var(--muted)">Formats to add: bite-size lessons - quizzes - videos - downloadable guides.</p></details>
+
+  <details class="module"><summary>Scam Prevention</summary><p>Phishing, fake prizes, impersonation, and too-good-to-be-true offers.</p><ul><li>Prizes that ask for passwords, codes, or fees are scams.</li><li>Urgency ('act now!') is a pressure tactic - slow down and verify.</li><li>Go to the official app or website yourself instead of clicking message links.</li></ul><p style="color:var(--muted)">Formats to add: bite-size lessons - quizzes - videos - downloadable guides.</p></details>
+
+  <details class="module"><summary>Digital Rights</summary><p>Your rights online: safety, expression, privacy, and participation.</p><ul><li>You have the right to be safe and free from harassment online.</li><li>You have the right to privacy and to control your personal information.</li><li>You have the right to participate, learn, and express yourself respectfully.</li></ul><p style="color:var(--muted)">Formats to add: bite-size lessons - quizzes - videos - downloadable guides.</p></details>
+
+  <details class="module"><summary>Technology-Facilitated Violence Awareness</summary><p>Harassment, threats, image-based abuse, and stalking - and where to get support.</p><ul><li>Threats, stalking, and sharing private images without consent are forms of abuse.</li><li>You never have to handle it alone - trusted adults and support services can help.</li><li>Preserve evidence safely and use platform reporting and blocking tools.</li></ul><p style="color:var(--muted)">Formats to add: bite-size lessons - quizzes - videos - downloadable guides.</p></details>
+
+  <section class="panel" id="quiz">
+    <h2>Quick quiz: spot the scam</h2>
+    <p>You get this message: 'Click this link and give your password to win a prize.' What should you do?</p>
+    <div style="display:flex;flex-direction:column;gap:.6rem">
+      <button type="button" class="btn navy" data-answer="0">Click quickly before the prize expires</button>
+      <button type="button" class="btn navy" data-answer="1">Do not click, never share your password, report and block</button>
+      <button type="button" class="btn navy" data-answer="2">Forward it to friends so they can win too</button>
+    </div>
+    <p id="quiz-feedback" aria-live="polite"></p>
+  </section>
+
+</main>
+<footer class="footer">
+  <p><strong>GuardianAI</strong> - An Intelligent Digital Safety Companion for Youth Protection.</p>
+  <p>Built for the SafeTech Africa Hacklab Youth Social Innovation Challenge 2026.</p>
+  <p>GuardianAI gives general safety guidance, not legal or medical advice. If someone is in immediate danger, contact local emergency services first.</p>
+</footer>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a><a href="assistant.html">Assistant</a><a href="risk-detection.html">Risk Check</a><a href="learn.html">Learn</a><a href="support.html">Support</a>
+</nav>
+<script src="assets/app.js"></script>
+</body>
+</html>
